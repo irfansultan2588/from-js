@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Table Arry </title>
+</head>
+
+<body>
+    <script>
+        let firstNames = ["Tabish", "Ali", "M.", "Irfan", "Faheem"];
+        let secondNames = ["Ansari", "Ahmad", "Shayan", "Sultan", "Solangi"];
+        let phones = [
+            "03111234567",
+            "03151234567",
+            "03162345678",
+            "03178765443",
+            "03183434565",
+        ];
+        let genders = ["Male", "Male", "Male", "Male", "Male"];
+        let emails = [
+            "tabish44@abc.com",
+            "ahmed22@abc.com",
+            "Shayan333@abc.com",
+            "Sunny123@abc.Com",
+            "Faheem344@abc.com",
+        ];
+
+        document.write("<table border = '1px' cellspacing = '8'>");
+        document.write(`<th> No  </th>`);
+        document.write(`<th> Sr.No  </th>`);
+        document.write(`<th> First names  </th>`);
+        document.write(`<th> Second names  </th>`);
+        document.write(`<th> Phone#  </th>`);
+        document.write(`<th> Genders  </th>`);
+        document.write(`<th> Emails </th>`);
+        for (let i = 0; i < firstNames.length; i++) {
+            document.write("<tr>");
+            document.write(`<td>${[i]}  </td>`);
+            document.write(`<td> 0${[i]}  </td>`);
+            document.write(`<td> ${firstNames[i]}  </td>`);
+            document.write(`<td> ${secondNames[i]}  </td>`);
+            document.write(`<td> ${phones[i]}  </td>`);
+            document.write(`<td> ${genders[i]}  </td>`);
+            document.write(`<td> ${emails[i]}  </td>`);
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>
